@@ -1,0 +1,38 @@
+
+body{
+    background-color: #fae3c2 !important;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+.ourGames {
+    background: #a1be39;
+    width: 100vw;        
+    position: fixed;     
+    top: 4%;              
+    left: 0;
+    z-index: 1000;      
+    padding: 10px;       
+    color: white;       
+    text-align: center;
+    font-size: 30px;
+}
+.image-box {
+    background-color: #fff7ec;
+    height: 13rem;
+    width: 11.5rem;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #8ea831;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}

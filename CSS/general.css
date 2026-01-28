@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1d0a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui;
+    direction: rtl;
+}
+.register,.login {
+    background-color: #ffffff;
+    padding: 70px 55px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-top: 5px solid #a1be39;
+}
+.header {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FDE71F;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #FF8D1A;
+    outline: none;
+}
+
+input{
+    height: 30px;
+    width: 320px;
+    margin: 12px;
+
+}
+
+.link {
+    margin-top: 20px;
+    text-align: center;
+    color: #00AAC6;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.ok {
+    margin-top: 20px;
+    background: linear-gradient(to right,#a1c22a, #FF8D1A);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.ok:hover {
+    background: linear-gradient(to right,#a1c22a, #FF8D1A);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ok .arrow {
+    transition: transform 0.3s ease;
+}
+
+.ok:hover .arrow {
+    transform: translateX(5px);
+}

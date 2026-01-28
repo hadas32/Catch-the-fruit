@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <script src="../JS/game.js" defer></script>
+    <link rel="stylesheet" href="../CSS/game.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sumPoints"></div>
+        <div class="points"></div>
+    </div>
+    <div class="game">
+        <div class="player"></div>
+        <div id="timer">03:00</div>
+    </div>
+
+    <div class="allLevel">
+        <button class="level" onclick="startGame(event)" style="background-color: #FFED26;">קל</button>
+        <button class="level" onclick="startGame(event)" style="background-color: #00ACC9;">בינוני</button>
+        <button class="level" onclick="startGame(event)" style="background-color: #FE8917;">קשה</button>
+    </div>
+
+    <div id="winModal" class="modal">
+        <div class="modal-content win">
+            <span class="close-btn" onclick="closeModal('winModal')">❌</span>
+            <h2 id="playerNameWin"></h2>
+            <h2 id="txt"></h2>
+            <p>צברת <strong id="scoreWin">0</strong> נקודות!</p>
+            <button class="play-again-btn" onclick="closeWin('winModal')">המשך</button>
+        </div>
+    </div>
+    <div id="loseModal" class="modal">
+        <div class="modal-content lose">
+          <span class="close-btn" onclick="closeModal('loseModal')">❌</span>
+          <h2 id="playerNameLose">!</h2>
+          <h2> 😢...אופסססס </h2>
+          <h2 id="txt"></h2>
+          <p>צברת סך <strong id="scoreLose">0</strong> נקודות</p>
+          <button class="nextLevel" onclick="closeModal('loseModal'),startGame('קל')">🔁 שחק שוב</button>
+        </div>
+      </div>
+      
+</body>
+
+</html>

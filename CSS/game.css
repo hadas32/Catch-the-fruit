@@ -1,0 +1,169 @@
+body {
+    background-color: #f9dcb5 !important;
+    position: relative;
+    direction: ltr !important;
+}
+
+.game {
+    height: 90vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #FAE8CE;
+
+}
+
+.coulmn {
+    height: 90vh;
+    width: 12.5vw;
+    position: relative;
+}
+
+img {
+    width: 4.7vw;
+    animation: drop 7s forwards;
+    position: absolute
+}
+
+.player {
+    z-index: 1;
+    background-image: url(../תמונות/right.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 215px;
+}
+
+.container {
+    position: relative;
+    width: 30px;
+    height: 85vh;
+    margin: 10px;
+    flex: fixed;
+}
+#timer{
+    font-size: 30px;
+    margin: 20px;
+    position: absolute;
+
+}
+
+.points {
+    z-index: -1;
+    width: 30px;
+    height: 85vh;
+    background-color: #a1be39;
+    border-radius: 15px;
+    position: absolute;
+}
+.allLevel{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.level{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    right: -20px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: right 0.3s;
+    width: 150px;
+    font-size: 1.1rem;
+    
+}
+.level:hover {
+    right: 0; 
+  }
+
+@keyframes drop {
+    from {
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border: 4px solid #a1be39;
+
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#playerNameLose,#playerNameWin{
+    color: #f6dd00;
+    font-size: 35px;
+}
+.play-again-btn ,.nextLevel{
+    background-color: #ffcc33;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    color: #4b320e;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    
+  }
+  
+  .play-again-btn:hover ,.nextLevel:hover{
+    background-color: #ffd966;
+    transform: scale(1.05);
+  }
+
+.sumPoints {
+    background-color: #FFED26 ;
+    width: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+  }
+  
