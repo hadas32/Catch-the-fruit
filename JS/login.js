@@ -12,7 +12,7 @@ function login() {
         let user = JSON.parse(tempEmail);
         if (user.password === password) {
             window.localStorage.setItem("currentUser", JSON.stringify(user))
-            window.location.href = "game.html";
+            window.location.href = "index.html";
         } else {
             alert("סיסמה שגויה");
         }

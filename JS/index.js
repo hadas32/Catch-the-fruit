@@ -57,7 +57,7 @@ function startGame(event) {
         let location = getRandomInt(divArr.length);
         let fru = getRandomInt(fruits.length);
         let img = document.createElement('img')
-        img.src = `../תמונות/${fruits[fru]}`;
+        img.src = `../pictures/${fruits[fru]}`;
         img.setAttribute('data-name', fruits[fru]);
         let selectDiv = document.getElementById(divArr[location]);
         selectDiv.append(img);
@@ -93,11 +93,11 @@ document.addEventListener('keydown', (event) => {
     let gameWidth = document.querySelector('.game').offsetWidth;
     let playerWidth = 90
     if (event.key === 'ArrowRight' && (currentLeft + step <= gameWidth - playerWidth)) {
-        player.style.backgroundImage = 'url(../תמונות/right.png)';
+        player.style.backgroundImage = 'url(../pictures/right.png)';
         player.style.left = (currentLeft + step) + 'px';
     }
     if (event.key === 'ArrowLeft' && (currentLeft - step > 110)) {
-        player.style.backgroundImage = 'url(../תמונות/left.png)';
+        player.style.backgroundImage = 'url(../pictures/left.png)';
         player.style.left = (currentLeft - step) + 'px';
     }
 });

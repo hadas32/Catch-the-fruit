@@ -28,7 +28,7 @@ img {
 
 .player {
     z-index: 1;
-    background-image: url(../תמונות/right.png);
+    background-image: url(../pictures/right.png);
     background-size: cover;
     background-position: center;
     position: absolute;

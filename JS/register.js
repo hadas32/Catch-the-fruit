@@ -27,7 +27,7 @@ function register() {
 
     if (localStorage.getItem(email) === null) {
         window.localStorage.setItem("currentUser", JSON.stringify(user))
-        window.location.href = "game.html";
+        window.location.href = "index.html";
     } else {
         alert("משתמש כבר קיים במערכת");
         window.location.href = "login.html";
