@@ -1,39 +1,73 @@
-# Catch the Fruit 🍎🍌💣
+# Catch the Fruit
 
-**Catch the Fruit** is an interactive web-based game developed using Vanilla JavaScript. The player controls a character to catch falling fruits while avoiding obstacles within a limited time.
-
-## 🎮 Game Features
-
-* **User System:** complete Login and Registration system using `LocalStorage` to save user progress.
-* **Dynamic Gameplay:**
-    * Move the character using **Arrow Keys** (Left/Right).
-    * **Collision Detection:** Real-time logic to detect when the player catches an item.
-* **Difficulty Levels:** 3 levels (Easy, Medium, Hard) affecting the speed of falling elements.
-* **Scoring System:**
-    * Fresh Fruit: +Points.
-    * Rotten Fruit: -Points.
-    * Bomb: Game Over / Time penalty.
-* **Timer & Game Loop:** Managed using `setInterval` and `setTimeout`.
-
-## 🛠️ Technologies Used
-
-* **HTML5** - Semantic structure.
-* **CSS3** - Animations (`@keyframes`), Flexbox layout, and responsive design.
-* **JavaScript (ES6+)** - DOM manipulation, Event Listeners, Logic & Algorithms.
-
-## 🚀 How to Run
-
-1.  Clone the repository or download the files.
-2.  Open the `HTML/login.html` file in your browser (Chrome recommended).
-3.  Register a new user or log in.
-4.  Choose a difficulty level and start playing!
-
-## 📷 Project Structure
-
-* `/HTML` - Game pages (Login, Register, Game board).
-* `/CSS` - Styling files.
-* `/JS` - Game logic and user management scripts.
-* `/pictures` - Game assets.
+**Catch the Fruit** is a high-performance, logic-driven web game built with Vanilla JavaScript. The project demonstrates real-time DOM manipulation, persistent data handling, and an event-driven architecture to create an engaging and smooth gaming experience.
 
 ---
-**Developed by Hadas Chomri & Sari Katzanelbogen**
+
+## Game Features
+
+- **Robust User Authentication:** A full membership system including **Registration (with Regex validation)** and **Login**, utilizing `LocalStorage` for session persistence and score tracking.  
+
+- **Dynamic Physics & Game Loop:**  
+  - Real-time movement via keyboard event listeners  
+  - **Advanced Collision Detection:** Custom logic using `getBoundingClientRect()` to detect precise intersections between the player and falling entities  
+  - Automated game state management using asynchronous timing events (`setInterval`)  
+
+- **Progressive Difficulty Scaling:**  
+  3 distinct levels (Easy, Medium, Hard) that dynamically adjust gravity, element frequency, and "Bomb" spawn rates  
+
+- **Interactive Scoring System:**  
+  - **Fresh Fruits:** Positive point accumulation  
+  - **Rotten Fruits:** Point deduction  
+  - **Bombs:** Instant game-over triggers or time penalties  
+
+- **Modal System:**  
+  Custom UI feedback for win/loss states, integrated with the current user's session data  
+
+---
+
+## Tech Stack
+
+- **JavaScript (ES6+):** Core physics engine, DOM manipulation, and LocalStorage API for data management  
+- **HTML5:** Semantic architecture and dynamic canvas-like element injection  
+- **CSS3:** Advanced animations using `@keyframes`, Flexbox layouts, and responsive UI components  
+
+---
+
+## Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/catch-the-fruit.git
+```
+
+### 2. Launch
+
+Open the following file in a modern web browser (Chrome recommended):
+
+```
+HTML/login.html
+```
+
+### 3. Play
+
+- Register a new account  
+- Select difficulty level  
+- Use the Arrow Keys to move  
+
+---
+
+## Project Architecture
+
+- `/HTML` - Application views (Authentication and Game Board)  
+- `/CSS` - Visual styling, layout definitions, and animations  
+- `/JS` - Core game engine, collision logic, and user authentication scripts  
+- `/pictures` - Optimized graphical game assets  
+
+---
+
+## Developed By
+
+**Hadas Chomri**  
+**Sari Katzanelbogen**
